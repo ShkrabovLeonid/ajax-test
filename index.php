@@ -71,14 +71,16 @@
                     <p class="start_block__form-title">Order now</p>
                     <p class="start_block__form-desc">Leave your phone number and email for our experts to contact you
                         shortly.</p>
-                    <input type="tel" name="tel" placeholder="Phone" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="tel" name="phone" placeholder="Phone" required/>
+                    <input type="email" name="email" placeholder="Email" required/>
+                    <input type="text" name="name" placeholder="Name" required/>
+                    <input type='hidden' name='security'
+                           value='<?php echo md5( $_SERVER['REMOTE_ADDR'] . $_SERVER['HTTP_USER_AGENT'] ); ?>'/>
                 </div>
                 <div class="triangle"></div>
                 <div class="start_block__terms">
                     <label class="checkbox">
-                        <input type="checkbox" name="terms" required>
+                        <input type="checkbox" name="terms"/>
                         <span></span>
                     </label>
                     <p>I agree that Ajax Systems and its authorized partners can contact me via email
@@ -86,7 +88,7 @@
                         commercial purposes.</p>
                 </div>
                 <div class="triangle"></div>
-                <button class="btn start_block__btn">Order</button>
+                <button type="submit" class="btn start_block__btn">Order</button>
             </form>
         </div>
     </section>
