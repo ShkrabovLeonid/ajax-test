@@ -13,7 +13,7 @@ class Sheets {
 
     public function __construct() {
         $this->service = new Google_Service_Sheets( (new Client())->getClient() );
-        $this->spreadsheetId = '1lKY4qNMRitKV2xJeSfq0geoGs7fOJeaNjctKjkBeKQ4';
+        $this->spreadsheetId = $_ENV['SPREADSHEETID'];
     }
 
     /**

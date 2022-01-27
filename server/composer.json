@@ -1,0 +1,19 @@
+{
+  "name": "ajax/server",
+  "autoload": {
+    "psr-4": {
+      "App\\": "."
+    }
+  },
+  "authors": [
+    {
+      "name": "Shkrabov L.",
+      "email": "l.shkrabov@gmail.com"
+    }
+  ],
+  "require": {
+    "google/apiclient": "^2.0",
+    "respect/validation": "^2.2",
+    "symfony/dotenv": "^6.0"
+  }
+}

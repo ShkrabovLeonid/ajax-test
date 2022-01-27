@@ -103,10 +103,6 @@
     }
   }
 
-  &__text {
-
-  }
-
   &__form {
     display: flex;
     flex: 1;
@@ -161,6 +157,16 @@
         line-height: 20px;
       }
     }
+
+    li {
+      color: $color-6;
+      font-size: 16px;
+      line-height: 24px;
+      @media #{$screen-1444} {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
   }
 
   &__terms {
@@ -180,9 +186,5 @@
         line-height: 16px;
       }
     }
-  }
-
-  &__btn {
-
   }
 }

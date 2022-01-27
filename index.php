@@ -76,6 +76,7 @@
                     <input type="text" name="name" placeholder="Name" required/>
                     <input type='hidden' name='security'
                            value='<?php echo md5( $_SERVER['REMOTE_ADDR'] . $_SERVER['HTTP_USER_AGENT'] ); ?>'/>
+                    <div class="form-messages"></div>
                 </div>
                 <div class="triangle"></div>
                 <div class="start_block__terms">
