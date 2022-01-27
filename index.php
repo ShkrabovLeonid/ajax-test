@@ -232,8 +232,8 @@
     </section>
 </main>
 <footer>
-    <script src="assets/dist/core/js/script.js"></script>
-    <script src="assets/dist/front_page/js/script.js"></script>
+    <script src="./assets/dist/core/js/script.js"></script>
+    <script src="./assets/dist/front_page/js/script.js"></script>
 </footer>
 </body>
 </html>

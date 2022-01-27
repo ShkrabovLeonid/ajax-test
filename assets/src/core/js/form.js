@@ -18,7 +18,7 @@ export default function sendForm({selector}) {
             }
         });
         try {
-            const res = await fetch(`${window.location.origin}/server/`, {
+            const res = await fetch(`${window.location.href}server/`, {
                 method: 'POST',
                 body: data
             });

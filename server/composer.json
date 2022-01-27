@@ -5,6 +5,7 @@
       "App\\": "."
     }
   },
+  "platform-check": false,
   "authors": [
     {
       "name": "Shkrabov L.",
