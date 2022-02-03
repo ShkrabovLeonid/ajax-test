@@ -17,10 +17,14 @@ $form = new Form();
 $data = $form->validator( $POST );
 
 if ( $data['status'] ) {
-    $sheet = new Sheets();
-    $res = $sheet->addValues( [$data['data']['phone'], $data['data']['email'], $data['data']['name']] );
-    if ( $res ) {
-        $data['messages'] = ['Сообщение успешно отправлено'];
+    try {
+        $res = (new Sheets())->addValues( [$data['data']['phone'], $data['data']['email'], $data['data']['name']] );
+        if ( isset( $res ) && $res ) {
+            $data['messages'] = ['Сообщение успешно отправлено'];
+        }
+    } catch ( \Google_Service_Exception $e ) {
+        $data['status'] = false;
+        $data['messages'] = [json_decode( $e->getMessage() )->error_description];
     }
 }
 echo json_encode( $data );

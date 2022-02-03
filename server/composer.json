@@ -15,6 +15,7 @@
   "require": {
     "google/apiclient": "^2.0",
     "respect/validation": "^2.2",
-    "symfony/dotenv": "^6.0"
+    "symfony/dotenv": "^6.0",
+    "ext-json": "*"
   }
 }

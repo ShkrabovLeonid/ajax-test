@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "e2337311f35251997a0c9cfed4d67c6a",
+  "content-hash": "091c44e22620ce6d23149f6e10348eaf",
   "packages": [
     {
       "name": "firebase/php-jwt",
@@ -136,16 +136,16 @@
     },
     {
       "name": "google/apiclient-services",
-      "version": "v0.231.1",
+      "version": "v0.233.0",
       "source": {
         "type": "git",
         "url": "https://github.com/googleapis/google-api-php-client-services.git",
-        "reference": "d6bf7109fc77d1c67110103a42e2a7d480b217a0"
+        "reference": "c3632d433742f1e0660460c1d9c220adf4e83885"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/d6bf7109fc77d1c67110103a42e2a7d480b217a0",
-        "reference": "d6bf7109fc77d1c67110103a42e2a7d480b217a0",
+        "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/c3632d433742f1e0660460c1d9c220adf4e83885",
+        "reference": "c3632d433742f1e0660460c1d9c220adf4e83885",
         "shasum": ""
       },
       "require": {
@@ -156,12 +156,12 @@
       },
       "type": "library",
       "autoload": {
-        "psr-4": {
-          "Google\\Service\\": "src"
-        },
         "files": [
           "autoload.php"
-        ]
+        ],
+        "psr-4": {
+          "Google\\Service\\": "src"
+        }
       },
       "notification-url": "https://packagist.org/downloads/",
       "license": [
@@ -174,9 +174,9 @@
       ],
       "support": {
         "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-        "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.231.1"
+        "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.233.0"
       },
-      "time": "2022-01-26T23:24:19+00:00"
+      "time": "2022-01-30T12:26:38+00:00"
     },
     {
       "name": "google/auth",
@@ -775,16 +775,16 @@
     },
     {
       "name": "phpseclib/phpseclib",
-      "version": "3.0.12",
+      "version": "3.0.13",
       "source": {
         "type": "git",
         "url": "https://github.com/phpseclib/phpseclib.git",
-        "reference": "89bfb45bd8b1abc3b37e910d57f5dbd3174f40fb"
+        "reference": "1443ab79364eea48665fa8c09ac67f37d1025f7e"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/89bfb45bd8b1abc3b37e910d57f5dbd3174f40fb",
-        "reference": "89bfb45bd8b1abc3b37e910d57f5dbd3174f40fb",
+        "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/1443ab79364eea48665fa8c09ac67f37d1025f7e",
+        "reference": "1443ab79364eea48665fa8c09ac67f37d1025f7e",
         "shasum": ""
       },
       "require": {
@@ -866,7 +866,7 @@
       ],
       "support": {
         "issues": "https://github.com/phpseclib/phpseclib/issues",
-        "source": "https://github.com/phpseclib/phpseclib/tree/3.0.12"
+        "source": "https://github.com/phpseclib/phpseclib/tree/3.0.13"
       },
       "funding": [
         {
@@ -882,7 +882,7 @@
           "type": "tidelift"
         }
       ],
-      "time": "2021-11-28T23:46:03+00:00"
+      "time": "2022-01-30T08:50:05+00:00"
     },
     {
       "name": "psr/cache",
@@ -1380,16 +1380,16 @@
     },
     {
       "name": "symfony/dotenv",
-      "version": "v6.0.2",
+      "version": "v6.0.3",
       "source": {
         "type": "git",
         "url": "https://github.com/symfony/dotenv.git",
-        "reference": "5c43c5515e549a8c2c426be36d40f47daf196968"
+        "reference": "45c47b67cc92fbcf9b1d40f08e970a136f75559f"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/symfony/dotenv/zipball/5c43c5515e549a8c2c426be36d40f47daf196968",
-        "reference": "5c43c5515e549a8c2c426be36d40f47daf196968",
+        "url": "https://api.github.com/repos/symfony/dotenv/zipball/45c47b67cc92fbcf9b1d40f08e970a136f75559f",
+        "reference": "45c47b67cc92fbcf9b1d40f08e970a136f75559f",
         "shasum": ""
       },
       "require": {
@@ -1430,7 +1430,7 @@
         "environment"
       ],
       "support": {
-        "source": "https://github.com/symfony/dotenv/tree/v6.0.2"
+        "source": "https://github.com/symfony/dotenv/tree/v6.0.3"
       },
       "funding": [
         {
@@ -1446,7 +1446,7 @@
           "type": "tidelift"
         }
       ],
-      "time": "2021-12-16T22:05:41+00:00"
+      "time": "2022-01-26T17:23:29+00:00"
     },
     {
       "name": "symfony/polyfill-mbstring",
@@ -1538,7 +1538,9 @@
   "stability-flags": [],
   "prefer-stable": false,
   "prefer-lowest": false,
-  "platform": [],
+  "platform": {
+    "ext-json": "*"
+  },
   "platform-dev": [],
   "plugin-api-version": "2.1.0"
 }
